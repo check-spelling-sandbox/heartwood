@@ -326,7 +326,7 @@ configured, and removed the IP addresses in favor of the DNS names.
 
 ### Better Support for Bare Repositories
 
-[gitrepostiory-layout]: https://git-scm.com/docs/gitrepository-layout/2.49.0
+[gitrepository-layout]: https://git-scm.com/docs/gitrepository-layout/2.49.0
 
 Some improvements to supporting bare repositories have been made for `rad` and
 `git-remote-rad`. For `rad`, the `rad clone` command has learned a new flag
