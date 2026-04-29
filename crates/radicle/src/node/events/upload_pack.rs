@@ -16,7 +16,7 @@ pub enum UploadPack {
         remote: NodeId,
         /// The status code of the upload-pack process.
         ///
-        /// N.b. `ExitStatus` can not be de/serialized, so the `Display` of the
+        /// N.b. `ExitStatus` cannot be de/serialized, so the `Display` of the
         /// status is used instead.
         status: String,
     },
