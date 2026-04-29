@@ -169,7 +169,7 @@ pub fn init(repo: git::Repository, args: Args, profile: &profile::Profile) -> an
             }
 
             if args.set_upstream || git::branch_remote(&repo, proj.default_branch()).is_err() {
-                // Setup eg. `master` -> `rad/master`
+                // Setup, e.g. `master` -> `rad/master`
                 radicle::git::set_upstream(
                     &repo,
                     &*radicle::rad::REMOTE_NAME,
@@ -244,7 +244,7 @@ pub fn init_existing(
     )?;
 
     if args.set_upstream {
-        // Setup eg. `master` -> `rad/master`
+        // Setup, e.g. `master` -> `rad/master`
         radicle::git::set_upstream(
             &working,
             &*radicle::rad::REMOTE_NAME,
