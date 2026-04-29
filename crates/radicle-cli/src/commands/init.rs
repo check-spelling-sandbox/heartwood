@@ -181,7 +181,7 @@ pub fn init(repo: git::Repository, args: Args, profile: &profile::Profile) -> an
             }
 
             if args.setup_signing {
-                // Setup Radicle signing key.
+                // Set up Radicle signing key.
                 self::setup_signing(profile.id(), &repo, interactive)?;
             }
 
@@ -254,7 +254,7 @@ pub fn init_existing(
     }
 
     if args.setup_signing {
-        // Setup Radicle signing key.
+        // Set up Radicle signing key.
         self::setup_signing(profile.id(), &working, interactive)?;
     }
 
@@ -483,7 +483,7 @@ pub fn announce(
     Ok(())
 }
 
-/// Setup Radicle key as commit signing key in repository.
+/// Set up Radicle key as commit signing key in repository.
 pub fn setup_signing(
     node_id: &NodeId,
     repo: &git::Repository,

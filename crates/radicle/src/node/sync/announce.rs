@@ -270,7 +270,7 @@ pub struct AnnouncerConfig {
 }
 
 impl AnnouncerConfig {
-    /// Setup a private network `AnnouncerConfig`, populating the
+    /// Set up a private network `AnnouncerConfig`, populating the
     /// [`AnnouncerConfig`]'s preferred seeds with the allowed set from the
     /// [`PrivateNetwork`].
     ///
@@ -291,7 +291,7 @@ impl AnnouncerConfig {
         }
     }
 
-    /// Setup a public `AnnouncerConfig`.
+    /// Set up a public `AnnouncerConfig`.
     ///
     /// `preferred_seeds` is the target set of preferred seeds that [`Announcer`] should
     /// attempt to synchronize with.

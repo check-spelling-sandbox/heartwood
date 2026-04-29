@@ -23,7 +23,7 @@ fn rad_cob_update_identity() {
     std::fs::create_dir_all(base).unwrap();
     std::fs::create_dir_all(working.clone()).unwrap();
 
-    // Setup a test repository.
+    // Set up a test repository.
     fixtures::repository(&working);
 
     test("examples/rad-init.md", &working, Some(home), []).unwrap();
@@ -61,7 +61,7 @@ fn rad_cob_multiset() {
     )
     .unwrap();
 
-    // Setup a test repository.
+    // Set up a test repository.
     fixtures::repository(&working);
 
     test("examples/rad-init.md", &working, Some(home), []).unwrap();

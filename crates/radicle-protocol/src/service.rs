@@ -501,7 +501,7 @@ where
             .routing_mut()
             .remove_inventories(private.iter(), &nid)?;
 
-        // Setup subscription filter for seeded repos.
+        // Set up subscription filter for seeded repos.
         self.filter = Filter::allowed_by(self.policies.seed_policies()?);
         // Connect to configured peers.
         let addrs = self.config.connect.clone();
