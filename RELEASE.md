@@ -66,7 +66,7 @@ take some time, so grab a coffee ☕.
 ---
 
 **Note**: the script currently outputs warnings about the `strip` command for
-MacOS builds. These are ok, and can be ignored.
+macOS builds. These are ok, and can be ignored.
 
 ---
 
