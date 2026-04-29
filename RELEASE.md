@@ -194,7 +194,7 @@ script linked to on [Get Started][website].
 
 ### Release Branch
 
-At this point, a release branch should be created. This branch will used for
+At this point, a release branch should be created. This branch will be used for
 *patch releases*, e.g. `1.5.1`, `1.5.2`, etc.
 
 The branch must be named `releases/x.y`, similar to the tagged release, where
