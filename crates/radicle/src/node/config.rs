@@ -671,7 +671,7 @@ impl Config {
         node::Features::SEED
     }
 
-    /// Return the configured user agent, if set. Otherwise fall back to the
+    /// Return the configured user agent, if set. Otherwise, fall back to the
     /// unintetesting value `"/radicle/"`.
     pub fn user_agent(&self) -> UserAgent {
         match self.user_agent.as_ref() {

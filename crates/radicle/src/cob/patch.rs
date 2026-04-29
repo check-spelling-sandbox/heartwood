@@ -943,7 +943,7 @@ impl Patch {
                     return Ok(());
                 };
                 if let Some(rev) = rev {
-                    // Insert a review if there isn't already one. Otherwise we just ignore
+                    // Insert a review if there isn't already one. Otherwise, we just ignore
                     // this operation
                     if let btree_map::Entry::Vacant(e) = rev.reviews.entry(author) {
                         let id = ReviewId(entry);
