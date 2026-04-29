@@ -560,7 +560,7 @@ continue to look into other fixes required for getting full Windows support.
 
 ### Display Full Node IDs
 
-Node IDs and and node addresses have improved formatting. The CLI will output
+Node IDs and node addresses have improved formatting. The CLI will output
 shortened forms of NIDs and addresses when the output is transient, and the full
 form where it is presented to the user. This will allow you to be able to copy
 and paste these identifiers.
