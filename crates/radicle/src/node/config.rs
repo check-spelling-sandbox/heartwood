@@ -246,7 +246,7 @@ pub struct ConnectionLimits {
     /// Max inbound connections.
     pub inbound: LimitConnectionsInbound,
 
-    /// Max outbound connections. Note that this can be higher than the *target* number.
+    /// Max outbound connections. Note that this can be greater than the *target* number.
     pub outbound: LimitConnectionsOutbound,
 }
 
