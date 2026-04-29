@@ -100,7 +100,7 @@ pub const MAX_CONNECTION_ATTEMPTS: usize = 3;
 /// How far back from the present time should we request gossip messages when connecting to a peer,
 /// when we come online for the first time.
 pub const INITIAL_SUBSCRIBE_BACKLOG_DELTA: LocalDuration = LocalDuration::from_mins(60 * 24);
-/// When subscribing, what margin of error do we give ourselves. A igher delta means we ask for
+/// When subscribing, what margin of error do we give ourselves. A higher delta means we ask for
 /// messages further back than strictly necessary, to account for missed messages.
 pub const SUBSCRIBE_BACKLOG_DELTA: LocalDuration = LocalDuration::from_mins(3);
 /// Minimum amount of time to wait before reconnecting to a peer.
