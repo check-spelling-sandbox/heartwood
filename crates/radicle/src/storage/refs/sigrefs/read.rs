@@ -187,7 +187,7 @@ where
             // The fact that the parent OID is a hash over all previous history
             // makes it *incredibly unlikely* or rather *practically impossible*
             // that the same `/refs` blob re-appears in previous history.
-            // Thus, we can spare oureselves walking the history.
+            // Thus, we can spare ourselves walking the history.
             return Ok(head);
         }
 
