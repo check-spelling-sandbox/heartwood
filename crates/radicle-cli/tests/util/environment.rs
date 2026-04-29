@@ -185,7 +185,7 @@ impl Environment {
         }
     }
 
-    /// Create a new profile using a the default configuration from [`Environment::config`].
+    /// Create a new profile using the default configuration from [`Environment::config`].
     pub fn profile(&mut self, alias: &'static str) -> Profile {
         self.profile_with(self.config(alias))
     }
