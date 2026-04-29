@@ -648,7 +648,7 @@ where
 
     /// Find the closest `n` peers by proximity in seeding graphs.
     /// Returns a sorted list from the closest peer to the furthest.
-    /// Peers with more seedings in common score score higher.
+    /// Peers with more seedings in common score higher.
     #[allow(unused)]
     pub fn closest_peers(&self, n: usize) -> Vec<NodeId> {
         todo!()
