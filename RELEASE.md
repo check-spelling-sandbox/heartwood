@@ -228,7 +228,7 @@ Patch Releases
 
 After the `x.y.0` release is made, it may be beneficial, or even necessary, to
 release patch releases of the binaries. These patch releases must be compatible
-with minor version that was released, otherwise the commits should not be
+with minor version that was released; otherwise, the commits should not be
 included.
 
 These changes may have been made on `master` and back-ported to the

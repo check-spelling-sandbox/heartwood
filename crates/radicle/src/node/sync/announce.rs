@@ -125,7 +125,7 @@ impl Announcer {
     /// Complete the [`Announcer`] process returning a [`AnnouncerResult`].
     ///
     /// If the target for the [`Announcer`] has been reached, then the result
-    /// will be [`AnnouncerResult::Success`], otherwise, it will be
+    /// will be [`AnnouncerResult::Success`]; otherwise, it will be
     /// [`AnnouncerResult::TimedOut`].
     pub fn timed_out(self) -> AnnouncerResult {
         match self.is_target_reached() {
@@ -144,7 +144,7 @@ impl Announcer {
 
     /// Check if the [`Announcer`] can continue synchronizing with more nodes.
     /// If there are no more nodes, then [`NoNodes`] is returned in the
-    /// [`ControlFlow::Break`], otherwise the [`Announcer`] is returned as-is in
+    /// [`ControlFlow::Break`]; otherwise, the [`Announcer`] is returned as-is in
     /// the [`ControlFlow::Continue`].
     // TODO(finto): I'm not sure this is needed with the change to the target
     // logic. Since we can reach the replication factor OR the preferred seeds,

@@ -353,7 +353,7 @@ impl radicle::node::Handle for Handle {
     }
 
     fn shutdown(self) -> Result<(), Error> {
-        // If the current value is `false`, set it to `true`, otherwise error.
+        // If the current value is `false`, set it to `true`; otherwise, error.
         if self
             .shutdown
             .compare_exchange(false, true, Ordering::SeqCst, Ordering::SeqCst)

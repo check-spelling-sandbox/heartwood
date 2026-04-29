@@ -152,7 +152,7 @@ fn test_cob_replication() {
     log::debug!(target: "test", "Issue {} created", issue.id());
 
     // Make sure that Bob's issue refs announcement has a different timestamp than his fork's
-    // announcement, otherwise Alice will consider it stale.
+    // announcement; otherwise, Alice will consider it stale.
     std::thread::sleep(std::time::Duration::from_millis(3));
 
     bob.handle.announce_refs_for(rid, [bob.id]).unwrap();

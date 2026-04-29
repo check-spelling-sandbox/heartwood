@@ -1489,7 +1489,7 @@ where
             }
         }
 
-        // Discard announcement messages we've already seen, otherwise update our last seen time.
+        // Discard announcement messages we've already seen; otherwise, update our last seen time.
         let relay = match self.db.gossip_mut().announced(announcer, announcement) {
             Ok(Some(id)) => {
                 log::debug!(
@@ -1942,7 +1942,7 @@ where
         let now = self.clock();
         let filter = self.filter();
 
-        // TODO: Only subscribe to outbound connections, otherwise we will consume too
+        // TODO: Only subscribe to outbound connections; otherwise, we will consume too
         // much bandwidth.
 
         // If we've been previously connected to the network, we'll have received gossip messages.

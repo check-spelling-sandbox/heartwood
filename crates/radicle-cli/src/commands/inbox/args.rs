@@ -200,7 +200,7 @@ impl FromStr for SortBy {
 
 pub(super) enum ListMode {
     /// List the notifications of the current repository, if in a working
-    /// directory, otherwise all the repositories.
+    /// directory; otherwise, all the repositories.
     Contextual,
     /// List the notifications for a all repositories.
     All,

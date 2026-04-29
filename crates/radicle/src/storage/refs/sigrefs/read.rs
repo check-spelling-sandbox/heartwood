@@ -386,7 +386,7 @@ impl Commit {
                 // for `rad/refs/sigrefs-parent` to target. The zero OID would
                 // be a candidate, but it is filtered out in [`Refs`].
                 // Upgrading to `FeatureLevel::Parent` is not a good idea
-                // either, otherwise any history containing this commit
+                // either; otherwise, any history containing this commit
                 // would be at that level from the root onwards.
 
                 // Pattern 2:
