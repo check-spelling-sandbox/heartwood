@@ -78,7 +78,7 @@ pub struct Handle {
 
     pub(crate) controller: reactor::Controller,
 
-    /// Whether a shutdown was initiated or not. Prevents attempting to shutdown twice.
+    /// Whether or not a shutdown was initiated. Prevents attempting to shutdown twice.
     shutdown: Arc<AtomicBool>,
     /// Publishes events to subscribers.
     emitter: Emitter<Event>,

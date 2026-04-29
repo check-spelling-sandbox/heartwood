@@ -2806,7 +2806,7 @@ impl fmt::Display for DisconnectReason {
 /// Result of a project lookup.
 #[derive(Debug)]
 pub struct Lookup {
-    /// Whether the project was found locally or not.
+    /// Whether or not the project was found locally.
     pub local: Option<Doc>,
     /// A list of remote peers on which the project is known to exist.
     pub remote: Vec<NodeId>,
