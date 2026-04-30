@@ -110,7 +110,7 @@ impl Environment {
 
     /// Path to the working directory of the user with the given alias.
     /// Tests that need to act on multiple repositories should crate
-    /// subdirecories within this directory.
+    /// subdirectories within this directory.
     pub fn work(&self, has_alias: &impl HasAlias) -> PathBuf {
         self.unix_home(has_alias).join("work")
     }
