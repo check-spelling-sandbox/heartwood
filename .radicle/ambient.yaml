@@ -40,7 +40,7 @@ plan:
       # `debian` directory, compared to what is committed to Git, from
       # which the "upstream tarball" is created.
       git reset --hard
-      git clean -fdx
+      git clean -xdf
       git status --ignored
 
       # Update debian/changelog with a new version so that every run
