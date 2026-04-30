@@ -3,7 +3,7 @@
 set -euo pipefail
 
 rm -f ../radicle*_*
-git clean -fdx
+git clean -xdf
 
 # Get name and version of source package.
 name="$(dpkg-parsechangelog -SSource)"
